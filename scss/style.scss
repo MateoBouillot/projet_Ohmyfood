@@ -1,0 +1,248 @@
+@import 'variables-mixin';
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin:0;
+    background-color: #f6f6f6;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &__navlogo  {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.225);
+        background-color: white;
+
+        &__logo {
+            width: 197px;
+            height: auto;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+
+        }
+    }
+
+    &__location {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        background-color: #eaeaea;
+        margin: 0;
+        padding: 0;
+        z-index: -1;
+
+        &__text {
+            @include presentation-subtitle;
+            margin-left: 15px;
+        }
+    }
+}
+
+.presentation  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        @include homepage-title;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 0;
+    }
+
+    &__txt {
+       font-family: 'Roboto';
+       font-size: 18px;
+       font-weight: 200;
+       text-align: center;
+       padding-left: 30px;
+       padding-right: 30px;
+    }
+
+    &__btn {
+        @include presentation-subtitle;
+        @include purple-btn(20px);
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+}
+
+.howto {
+    background-color: white;
+
+    &__title {
+        @include homepage-title;
+        padding-left: 25px;
+        padding-top: 35px;
+    }
+
+   
+}
+
+.fas {
+    color: #7e7e7e;
+    padding-left: 30px;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    counter-reset: nbrlist;
+    padding-bottom: 50px;
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        margin: 12px;
+        width: 80%;
+        height: 72px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+
+        &__txt {
+            @include presentation-subtitle;
+            justify-self: center;
+        }
+
+        &:hover > .fas {
+            color: $primarycolor;
+        }
+
+        &::before {
+            content: counter(nbrlist);
+            counter-increment: nbrlist;
+            position: absolute;
+            left: -12px;
+            top: 23px;
+            font-family: 'roboto';
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+            border-radius: 50px;
+            background-color: $primarycolor;
+            padding: 3px 7px;
+        }
+    }
+}
+
+.restaurants-title {
+    @include homepage-title;
+    padding-left: 25px;
+}
+
+.restaurants-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    &__links {
+        width: 90%;
+        height: 251px;
+        background-color: white;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+
+        &__img {
+            width: 100%;
+            height: 70%;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+    }
+}
+
+.cards-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__txt {
+        padding-left: 15px;
+
+        &__title {
+            @include title-cards;
+            margin-bottom: 0;
+        }
+
+        &__subtitle {
+            @include subtitle-cards;
+            margin-top: 5px;
+        }
+    }
+
+    &__icon {
+        padding-right: 25px;
+    }
+}
+
+.footer {
+    background-color: #353535;
+
+    &__logo {
+        font-family: 'shrikhand';
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        @include presentation-subtitle;
+        gap: 10px;
+        padding-bottom: 20px;
+
+        &__txt-icon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__txt-icon i {
+            color: white;
+        }
+
+        &__txt {
+            padding-left: 30px;
+        }
+    }
+
+    &__list p {
+        margin: 0;
+    }
+
+
+}

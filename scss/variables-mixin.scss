@@ -1,0 +1,36 @@
+$primarycolor: #9356DC;
+$secondarycolor: #FF79DA;
+$tertiarycolor: #99E2D0;
+
+@mixin homepage-title {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin presentation-subtitle {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@mixin purple-btn($padding) {
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(0deg, $primarycolor, $secondarycolor);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px $padding;
+}
+
+@mixin subtitle-cards {
+    font-family: 'roboto';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@mixin title-cards {
+    font-family: 'roboto';
+    font-size: 18px;
+    font-weight: 700;
+}
