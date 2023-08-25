@@ -1,0 +1,150 @@
+@import 'variables-mixin';
+
+
+@keyframes purple-btn-hover {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(0deg, $primarycolor, $secondarycolor);
+    }
+
+    20% {
+        background: linear-gradient(0deg, lighten($primarycolor, 1%), lighten($secondarycolor, 1%));
+    }
+
+    40% {
+        background: linear-gradient(0deg, lighten($primarycolor, 2%), lighten($secondarycolor, 2%));
+    }
+
+    60% {
+        background: linear-gradient(0deg, lighten($primarycolor, 3%), lighten($secondarycolor, 3%));
+    }
+
+    80% {
+        background: linear-gradient(0deg, lighten($primarycolor, 4%), lighten($secondarycolor, 4%));
+    }
+
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(0deg, lighten($primarycolor, 5%), lighten($secondarycolor, 5%));
+    }
+}
+
+@keyframes purple-btn-unhover {
+    0% {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(0deg, lighten($primarycolor, 5%), lighten($secondarycolor, 5%));
+    }
+
+    20% {
+        background: linear-gradient(0deg, lighten($primarycolor, 4%), lighten($secondarycolor, 4%));
+    }
+
+    40% {
+        background: linear-gradient(0deg, lighten($primarycolor, 3%), lighten($secondarycolor, 3%));
+    }
+
+    60% {
+        background: linear-gradient(0deg, lighten($primarycolor, 2%), lighten($secondarycolor, 2%));
+    }
+
+    80% {
+        background: linear-gradient(0deg, lighten($primarycolor, 1%), lighten($secondarycolor, 1%));
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(0deg, $primarycolor, $secondarycolor);
+    }
+}
+
+@keyframes color-icon {
+    0% {
+        color: #7e7e7e;
+    }
+
+    100% {
+        color: $primarycolor;
+    }
+}
+
+@keyframes color-icon-reverse {
+    0% {
+        color: $primarycolor;
+    }
+
+    100% {
+        color: #7e7e7e;
+    }
+}
+
+@keyframes btn-hover {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes btn-unhover {
+    0% {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes menu-appearing {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes title-appearing {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes menu-hover {
+    0% {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes menu-unhover {
+    0% {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    100% {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
