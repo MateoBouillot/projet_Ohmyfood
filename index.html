@@ -13,21 +13,21 @@
 </head>
 
 <body>
+    <div class="load">
+        <div class="load__bar bar-1"></div>
+        <div class="load__bar bar-2"></div>
+        <div class="load__bar bar-3"></div>
+    </div>
+
     <header class="header">
-        <ul class="header__navlogo">    
+        <div class="header__navlogo">    
             <img src="images/logo/ohmyfood.png" alt="logo" class="header__navlogo__logo">
-        </ul>    
+        </div>    
         <ul class="header__location">
             <li><i class="fas fa-location-dot"></i></li>
             <li class="header__location__text">Paris, Belleville</li>
         </ul>
     </header>
-
-    <!-- <section class="load">
-        <div class="load__bar"></div>
-        <div class="load__bar"></div>
-        <div class="load__bar"></div>
-    </section> -->
 
     <main>
 
@@ -42,15 +42,15 @@
                 <h1 class="howto__title">Fonctionnement</h1>
                 <ul class="cards">
                     <li class="cards__card">
-                        <i class="fas fa-mobile-screen-button"></i>
+                        <i class="fas fa-mobile-screen-button icon-howto"></i>
                         <p class="cards__card__txt">Choisissez un restaurant</p>
                     </li>
                     <li class="cards__card">
-                        <i class="fas fa-list-ul"></i>
+                        <i class="fas fa-list-ul icon-howto"></i>
                         <p class="cards__card__txt">Composez votre menu</p>
                     </li>
                     <li class="cards__card">
-                        <i class="fas fa-store"></i>
+                        <i class="fas fa-store icon-howto"></i>
                         <p class="cards__card__txt">Dégustez au restaurant</p>
                     </li>
                 </ul>
@@ -68,7 +68,10 @@
                             <h2 class="cards-description__txt__title">La palette du goût</h2>
                             <h3 class="cards-description__txt__subtitle">Ménilmontant</h3>
                         </li>
-                        <li class="cards-description__icon"><i class="far fa-heart fa-2xl"></i></li>
+                        <li class="menu_btn decallage">
+                            <i class="menu_like menu_like-noBg far fa-heart fa-2x"></i>
+                            <i class="menu_like menu_like-bg fas fa-heart fa-2x"></i>
+                        </li>
                     </ul>
                 </a>
                 <a href="restaurants/La-note-enchantée.html" class="restaurants-cards__links">
@@ -78,7 +81,10 @@
                             <h2 class="cards-description__txt__title">La note enchantée</h2>
                             <h3 class="cards-description__txt__subtitle">Charonne</h3>
                         </li>
-                        <li class="cards-description__icon"><i class="far fa-heart fa-2xl"></i></li>
+                        <li class="menu_btn decallage">
+                            <i class="menu_like menu_like-noBg far fa-heart fa-2x"></i>
+                            <i class="menu_like menu_like-bg fas fa-heart fa-2x"></i>
+                        </li>
                     </ul>
                 </a>
                 <a href="restaurants/A-la-française.html" class="restaurants-cards__links">
@@ -88,7 +94,10 @@
                             <h2 class="cards-description__txt__title">À la française</h2>
                             <h3 class="cards-description__txt__subtitle">Cité Rouge</h3>
                         </li>
-                        <li class="cards-description__icon"><i class="far fa-heart fa-2xl"></i></li>
+                        <li class="menu_btn decallage">
+                            <i class="menu_like menu_like-noBg far fa-heart fa-2x"></i>
+                            <i class="menu_like menu_like-bg fas fa-heart fa-2x"></i>
+                        </li>
                     </ul>
                 </a>
                 <a href="restaurants/Le-délice-des-sens.html" class="restaurants-cards__links">
@@ -98,7 +107,10 @@
                             <h2 class="cards-description__txt__title">Le délice des sens</h2>
                             <h3 class="cards-description__txt__subtitle">Folie-Méricourt</h3>
                         </li>
-                        <li class="cards-description__icon"><i class="far fa-heart fa-2xl"></i></li>
+                        <li class="menu_btn decallage">
+                            <i class="menu_like menu_like-noBg far fa-heart fa-2x"></i>
+                            <i class="menu_like menu_like-bg fas fa-heart fa-2x"></i>
+                        </li>
                     </ul>
                 </a>
             </section>
@@ -120,7 +132,7 @@
                 <p>Mentions légales</p>
             </li>
             <li class="footer__list__txt">
-                <p>Contact</p>
+                <a href="mailto:Ohmyfood@gmail.com" class="contact">Contact</a>
             </li>
         </ul>
     </footer>

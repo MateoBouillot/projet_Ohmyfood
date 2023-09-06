@@ -4,6 +4,7 @@ $tertiarycolor: #99E2D0;
 $lightprimarycolor: lighten($primarycolor, 5%);
 $lightsecondarycolor: lighten($secondarycolor, 5%);
 $menu-appearing-delay: 300ms;
+$linear-gradient: linear-gradient(#FF79DA,#9356DC);
 
 @mixin homepage-title {
     font-family: 'Roboto';

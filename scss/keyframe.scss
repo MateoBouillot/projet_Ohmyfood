@@ -150,3 +150,56 @@
         transform: translateX(-54px)
     }
 }
+
+@keyframes anim-loader-1 {
+    0% {
+      transform: scale(1, 1)
+    }
+    17% {
+      transform: scale(0.7, 1.3)
+    }
+    33% {
+      transform: scale(1, 1)
+    }
+}
+  
+@keyframes anim-loader-2 {
+    33% {
+      transform: scale(1, 1)
+    }
+    50% {
+      transform: scale(0.7, 1.3)
+    }
+    66% {
+      transform: scale(1, 1)
+    }
+}
+  
+@keyframes anim-loader-3 {
+    66% {
+      transform: scale(1, 1)
+    }
+    84% {
+      transform: scale(0.7, 1.3)
+    }
+    100% {
+      transform: scale(1, 1)
+    }
+}
+
+@keyframes disparition-loader {
+    0% {
+        opacity: 1;
+        z-index: 3;
+    }
+
+    99%{
+        opacity: 0;
+    }
+
+    100% {
+        z-index: -5;
+        opacity: 0;
+    }
+}
+  
