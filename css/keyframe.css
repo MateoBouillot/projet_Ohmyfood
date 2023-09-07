@@ -68,22 +68,18 @@
 
 @keyframes btn-hover {
   0% {
-    transform: scale(1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
   100% {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   }
 }
 
 @keyframes btn-unhover {
   0% {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   }
   100% {
-    transform: scale(1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
 }
