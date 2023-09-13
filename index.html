@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/da13691371.js" crossorigin="anonymous"></script>
 </head>
 
@@ -31,15 +31,15 @@
 
     <main>
 
-        <article>
-            <section class="presentation">
+        <section>
+            <div class="presentation">
                 <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
                 <p class="presentation__txt">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <a href="#restaurants" class="presentation__btn">Explorer nos restaurants</a>
-            </section>
-            <section class="howtobg">
+            </div>
+            <div class="howtobg">
             <div class="howto">
-                <h1 class="howto__title">Fonctionnement</h1>
+                <h2 class="howto__title">Fonctionnement</h2>
                 <ul class="cards">
                     <li class="cards__card">
                         <i class="fas fa-mobile-screen-button icon-howto"></i>
@@ -55,18 +55,18 @@
                     </li>
                 </ul>
             </div>
-            </section>
-        </article>
-        <nav id="restaurants" >
+        </div>
+        </section>
+        <section id="restaurants" >
         <div class="restaurants">
-            <h1 class="restaurants-title">Restaurants</h1>
-            <section class="restaurants-cards">
+            <h2 class="restaurants-title">Restaurants</h2>
+            <article class="restaurants-cards">
                 <a href="restaurants/La-palette-du-gout.html" class="restaurants-cards__links">
                     <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout" class="restaurants-cards__links__img">
                     <ul class="cards-description">
                         <li class="cards-description__txt">
-                            <h2 class="cards-description__txt__title">La palette du goût</h2>
-                            <h3 class="cards-description__txt__subtitle">Ménilmontant</h3>
+                            <h3 class="cards-description__txt__title">La palette du goût</h2>
+                            <p class="cards-description__txt__subtitle">Ménilmontant</h3>
                         </li>
                         <li class="menu_btn decallage">
                             <i class="menu_like menu_like-noBg far fa-heart fa-2x"></i>
@@ -78,8 +78,8 @@
                     <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="restaurants-cards__links__img">
                     <ul class="cards-description">
                         <li class="cards-description__txt">
-                            <h2 class="cards-description__txt__title">La note enchantée</h2>
-                            <h3 class="cards-description__txt__subtitle">Charonne</h3>
+                            <h3 class="cards-description__txt__title">La note enchantée</h2>
+                            <p class="cards-description__txt__subtitle">Charonne</h3>
                         </li>
                         <li class="menu_btn decallage">
                             <i class="menu_like menu_like-noBg far fa-heart fa-2x"></i>
@@ -91,8 +91,8 @@
                     <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="restaurants-cards__links__img">
                     <ul class="cards-description">
                         <li class="cards-description__txt">
-                            <h2 class="cards-description__txt__title">À la française</h2>
-                            <h3 class="cards-description__txt__subtitle">Cité Rouge</h3>
+                            <h3 class="cards-description__txt__title">À la française</h2>
+                            <p class="cards-description__txt__subtitle">Cité Rouge</h3>
                         </li>
                         <li class="menu_btn decallage">
                             <i class="menu_like menu_like-noBg far fa-heart fa-2x"></i>
@@ -104,8 +104,8 @@
                     <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="restaurants-cards__links__img">
                     <ul class="cards-description">
                         <li class="cards-description__txt">
-                            <h2 class="cards-description__txt__title">Le délice des sens</h2>
-                            <h3 class="cards-description__txt__subtitle">Folie-Méricourt</h3>
+                            <h3 class="cards-description__txt__title">Le délice des sens</h2>
+                            <p class="cards-description__txt__subtitle">Folie-Méricourt</h3>
                         </li>
                         <li class="menu_btn decallage">
                             <i class="menu_like menu_like-noBg far fa-heart fa-2x"></i>
@@ -113,12 +113,12 @@
                         </li>
                     </ul>
                 </a>
-            </section>
+            </article>
         </div>    
-        </nav>
+    </section>
     </main>
     <footer class="footer">
-        <h1 class="footer__logo">ohmyfood</h1>
+        <h2 class="footer__logo">ohmyfood</h2>
         <ul class="footer__list">
             <li class="footer__list__txt-icon">
                 <i class="fas fa-utensils fa-2xs"></i>
